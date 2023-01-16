@@ -99,58 +99,12 @@ h4{
   background-size: cover;
   background-position: center;
 }
-.sidepanel {
-  width: 100%;
-  margin: 0 auto;
-  height: 10%;
-  display: static;
-  border: 2px solid rgba(0, 0, 0, .4);
-  transition: 1s ease;
-}
-
-.sidebar {
-  width: 45vh;
-  height: 10%;
-  background-color: rgb(117, 126, 119);
-  transition: 1s ease;
-  position: relative;
-  text-align: left;
-  padding: 10px;
-  margin: 10px;
-}
-.sidebar a{
-  background-color: hsl(0, 0%, 95%);
-  width: 85%;
-  max-width: 48rem;
-  margin: auto;
-  color: hsl(0, 0%, 20%);
-  border: 2px solid hsl(0, 0%, 0%);
-}
-.panel-content {
-  width: 100%;
-  height: 20%;
-  background-color: rgb(255, 255, 255);
-  transition: 1s ease;
-}
-
-.panel-content_large {
-  width: 100%;
-}
-
-.sidebar_small {
-  width: 20%;
-  /* display: block;  */
-}
-
-button {
-  position: absolute;
-  border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
-  left: 100%;
-  top: 2rem;
-  transform: translateX(-50%);
-  cursor: pointer;
+.sidenav a{
+  padding: 0 auto;
+  text-decoration: none;
+  font-size: 16px;
+  color: #000000;
+  transition: 0.3s;
+  float: unset;
+  display: block;
 }

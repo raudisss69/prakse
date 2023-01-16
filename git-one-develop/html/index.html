@@ -27,18 +27,36 @@
     </div>
     <!-- hero end -->
     <!-- home -->
-    <div class="sidepanel">
-        <div class="sidebar">
+    <style>
+        #mySidenav {
+            display: none;
+        }
+    </style>
+    
+    <script>
+      document.body.addEventListener('click', function (e) {
+        if (e.target.parentNode.id === 'mySidenav') {
+          document.getElementById("mySidenav").style.display = "block";
+          e.preventDefault();
+          return;
+        }
+        document.getElementById("mySidenav").style.display = "none";
+      }, true);
+    
+      function openNav() {
+        document.getElementById("mySidenav").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.display = "none";
+      }
+    </script>
+        <div id="mySidenav" class="sidenav">
             <a href="https://www.bikeradar.com/advice/buyers-guides/best-road-bikes/">Road Bikes</a>
             <a href="https://www.canyon.com/en-lv/mountain-bikes/">Mountain Bikes</a>
             <a href="https://www.halfords.com/bikes/electric-bikes/">Electric Bikes</a>
             <a href="https://www.bicycling.com/bikes-gear/a22140457/best-hybrid-bikes/">Hybrid bikes</a>
-          <button>X</button>
         </div>
-        <div class="panel-content">
-        </div>
-      </div>
-
+        <span style="font-size:18px;cursor:pointer" id="myMenu" onclick="openNav()">&#9776;menu</span>
     <div class="memes">
         <main>
             <h2 style="text-align: center">Take a break and watch some memes!</h2>
