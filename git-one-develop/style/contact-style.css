@@ -1,9 +1,13 @@
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
 *{
   padding: 0;
   margin: 0;
   font-family: 'Joseif Sans', sans-serif;
   box-sizing: border-box;
 }
+
 body{
   height: 100vh;
   width: 100%;
@@ -42,73 +46,46 @@ nav ul li a{
   font-weight: bold;
   text-transform: capitalize;
 }
-.content{
-  position: relative;
-  text-align: center;
+
+h1 {
+   text-align: center;
+   color: #a8a8a8;
+   margin-top: 100px;
 }
-.content h1{
-  color: white;
-  margin: 20px 0px 20px;
-  font-size: 50px;
-}
-h3{
-  color: white;
-  font-size: 25px;
-  margin-bottom: 50px;
-}
-h4{
-  color: white;
-  letter-spacing: 2px;
-  font-size: 20px;
-}
-.footer-menu{
-  height: auto;
+
+.container{
   width: 100%;
-  background-image: url(../img/img-3.jpg);
-  background-color: gray;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.footer-menu h3{
-  color: white;
-  font-weight: bold;
-  position: relative;
+form{
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
 }
-.contact-form{
-  position: relative;
-  text-align: center;
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-.contact-form form{
-  width: 680px;
-  max-width: 100%;
-  position: relative;
-  text-align: center;
-}
-.contact-form form input:first-child{
-  display: inline-block;
-  width: 100%;
-  padding: 14px 130px 14px 15px;
-  border: 2px solid black;
-  border-radius: 30px;
-}
-.contact-form form input:last-child{
-  position: absolute;
-  display: inline-block;
+form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
   outline: none;
-  border: none;
-  padding: 10px 30px;
-  border-radius: 30px;
-  background-image: url(../img/img-2.jpg);
-  background-size: cover;
-  background-position: center;
+  background: white;
+  font-size: 16px;
+}
+form button{
+  padding: 15px;
+  background: #e95360;
   color: white;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 ;
-  letter-spacing: 2px;
-  top: 6px;
-  right: 6px;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
 }
